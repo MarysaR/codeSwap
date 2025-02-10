@@ -1,0 +1,22 @@
+name: Restrict PRs to Allowed Branch Types
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  check-branch-type:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Vérifier si la branche source respecte les conventions de nommage
+        run: |
+          BRANCH_NAME="${{ github.head_ref }}"
+
+          if [[ ! "$BRANCH_NAME" =~ ^(feature|chore|fix|refacto)/ ]]; then
+            echo "❌ Erreur : Seules les branches 'feature/', 'chore/', 'fix/', et 'refacto/' peuvent ouvrir une PR vers 'develop'."
+            exit 1
+          fi
+
+          echo "✅ La branche respecte la convention. PR autorisée."
