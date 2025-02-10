@@ -1,9 +1,11 @@
 name: Restrict Branch Naming
 
 on:
-  create:
+  push:
+    tags-ignore:
+      - "**"
     branches:
-      - "*"
+      - "**"
 
 jobs:
   check-branch-name:

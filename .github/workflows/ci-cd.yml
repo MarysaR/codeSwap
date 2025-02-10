@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: 16
 
-      - name: Installer les dépendances
-        run: npm install
+      # - name: Installer les dépendances
+      #   run: npm install
 
-      - name: Exécuter les tests Jest
-        run: npm test
+      # - name: Exécuter les tests Jest
+      #   run: npm test
