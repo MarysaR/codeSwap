@@ -1,7 +1,9 @@
 node_modules/
 .env
+target/
+.vscode/
 .DS_Store
 .idea/
-.vscode/
 *.log
-target/
+
+
