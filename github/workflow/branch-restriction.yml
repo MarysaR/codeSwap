@@ -1,0 +1,22 @@
+name: Restrict Branch Naming
+
+on:
+  create:
+    branches:
+      - "*"
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Vérifier si la branche respecte la convention de nommage
+        run: |
+          BRANCH_NAME="${{ github.ref_name }}"
+
+          if [[ ! "$BRANCH_NAME" =~ ^(feature|fix|chore|refacto)/ ]]; then
+            echo "❌ Erreur : Le nom de la branche doit commencer par 'feature/', 'fix/', 'chore/' ou 'refacto/'."
+            exit 1
+          fi
+
+          echo "✅ Le nom de la branche respecte la convention."
