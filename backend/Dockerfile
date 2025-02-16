@@ -10,6 +10,6 @@ RUN mvn dependency:go-offline
 COPY . .
 RUN mvn clean package
 
-EXPOSE 8000
+EXPOSE 8080
 CMD ["java", "-jar", "/app/target/backend-1.0-SNAPSHOT.jar"]
 
