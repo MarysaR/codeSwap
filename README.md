@@ -1,7 +1,59 @@
-# 🐳 Documentation Générale - CodeSwap
+# Documentation Générale
 
-Bienvenue sur **CodeSwap**, un projet intégrant **Backend (Spring Boot)**, **Frontend (Vue.js)** et **Logic (TypeScript/Jest)**, entièrement conteneurisé avec **Docker**.
+CodeSwap : Plateforme Collaborative pour Développeurs
 
+# Qu’est-ce que CodeSwap ?
+
+## CodeSwap est une application collaborative permettant aux développeurs de :
+- Échanger, tester et évaluer des fragments de code en équipe.
+- Obtenir des retours sur leur code en temps réel.
+- Travailler sur du code en équipe, avec une logique de code review et de test automatisé.
+- Comparer plusieurs implémentations pour trouver la meilleure approche.
+  
+### L'application repose sur une architecture modulaire avec :
+- Frontend (Vue.js) pour une interface moderne et intuitive.
+- Backend (Spring Boot) qui gère les utilisateurs, les projets et les requêtes API.
+- Logic (Node.js) qui assure le traitement des données et l'exécution de tests.
+- Base de données (MySQL) pour stocker les codes et retours.
+
+# À quoi sert CodeSwap ?
+
+Un développeur peut poster un extrait de code et :
+- Le tester en temps réel avec différents scénarios.
+- Obtenir des feedbacks d’autres développeurs.
+- Comparer des solutions alternatives.
+- Code Review collaborative
+
+### CodeSwap permet aux équipes de :
+- Vérifier la qualité du code avant un merge.
+- Ajouter des commentaires et suggestions sur un bout de code précis.
+- Visualiser les améliorations proposées avant de les valider.
+- Évaluation et notation
+- 
+### Chaque fragment de code peut être :
+- Noté selon son efficacité et sa clarté.
+- Comparé avec d’autres implémentations.
+- Automatiquement testé avec des entrées/sorties attendues.
+- Exécution et vérification de code
+  
+### Un module d'exécution permet de :
+- Tester des exemples concrets de code directement sur la plateforme.
+- Lancer des tests unitaires sur le code soumis.
+- Vérifier la performance et la compatibilité.
+  
+## Comment fonctionne CodeSwap ?
+Un utilisateur soumet un code en spécifiant son langage.
+- Le Backend valide la requête et la stocke en base de données.
+- Logic analyse et teste le code (exécution simulée, validation).
+- Le Backend récupère le résultat et l’envoie au Frontend.
+- Les autres utilisateurs peuvent interagir (commenter, proposer des corrections).
+
+## Pourquoi utiliser CodeSwap ?
+
+- Facilite la collaboration entre développeurs
+- Améliore la qualité du code avec des retours en temps réel
+- Automatise les tests et l’évaluation des snippets
+- Rend l’apprentissage du code plus interactif
 ---
 
 ## 1. Prérequis
