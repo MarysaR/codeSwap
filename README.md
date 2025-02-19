@@ -1,10 +1,8 @@
-# Documentation Générale
+# CodeSwap : Plateforme Collaborative pour Développeurs
 
-CodeSwap : Plateforme Collaborative pour Développeurs
+## Qu’est-ce que CodeSwap ?
 
-# Qu’est-ce que CodeSwap ?
-
-## CodeSwap est une application collaborative permettant aux développeurs de :
+### CodeSwap est une application collaborative permettant aux développeurs de :
 - Échanger, tester et évaluer des fragments de code en équipe.
 - Obtenir des retours sur leur code en temps réel.
 - Travailler sur du code en équipe, avec une logique de code review et de test automatisé.
@@ -16,7 +14,7 @@ CodeSwap : Plateforme Collaborative pour Développeurs
 - Logic (Node.js) qui assure le traitement des données et l'exécution de tests.
 - Base de données (MySQL) pour stocker les codes et retours.
 
-# À quoi sert CodeSwap ?
+## À quoi sert CodeSwap ?
 
 Un développeur peut poster un extrait de code et :
 - Le tester en temps réel avec différents scénarios.
